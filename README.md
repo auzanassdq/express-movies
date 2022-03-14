@@ -1,6 +1,6 @@
 # README
 
-Kode hasil experimen kemarin ada di dalam `app.js`. 
+Kode ini dibuat menggunakan bahasa pemrograman Javascript dan dengan bantuan `express JS` untuk dapat membuat server. Hasil experimen kemarin ada di dalam `app.js`. 
 
 Kemarin kita mencoba untuk membuat API film, seperti dibawah
 
