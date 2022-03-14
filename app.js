@@ -15,10 +15,12 @@ app.get("/", (req, res) => {
   res.json("hello ini dari express")
 })
 
+// memberikan semua data film
 app.get("/movies", (req, res) => {
   res.json(movies)
 })
 
+// memberikan semua data film berdasarkan ID
 app.get("/movies/:id", (req, res) => {
   const { id } = req.params
 
@@ -27,6 +29,7 @@ app.get("/movies/:id", (req, res) => {
   res.json(movie)
 })
 
+// menambahakan film
 app.post("/movies", (req, res) => {
   const data = req.body
 
@@ -35,7 +38,11 @@ app.post("/movies", (req, res) => {
   res.json("data berhasil di tambahkan")
 })
 
+// Menghapus film berdasarkan ID
+// pakai app.DELETE()
 
+// Mengupdate film berdaasrkan ID
+// pakai app.PUT()
 
 app.listen(PORT, () => {
   console.log(`server running on port : ${PORT}`);
